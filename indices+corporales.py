@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[18]:
+# In[ ]:
 
 
 import math
@@ -72,11 +72,11 @@ def grasa_porcentaje(cintura,cuello,altura,cadera):
         grasa_porcentaje=495/(1.29579-0.35004*(math.log10(cintura+cadera-cuello))+0.22100*(math.log10(altura*100)))-450
         if grasa_porcentaje<=13:
             print ('Tu porcentaje de grasa corporal es: ',grasa_porcentaje ,'Tienes la grasa esencial para vivir.')
-        elif grasa_porcentaje>13 and grasa_porcentaje<=20:
+        elif grasa_porcentaje>13 and grasa_porcentaje<=20.99:
             print ('Tu porcentaje de grasa corporal es: ',grasa_porcentaje ,'Tienes un nivel de grasa propio de un atleta.')
-        elif grasa_porcentaje>=21 and grasa_porcentaje<=24:
+        elif grasa_porcentaje>=21 and grasa_porcentaje<=24.99:
             print ('Tu porcentaje de grasa corporal es: ',grasa_porcentaje ,'Tienes un nivel de grasa bajo,cuerpo fitness')
-        elif grasa_porcentaje>=25 and grasa_porcentaje<=31:
+        elif grasa_porcentaje>=25 and grasa_porcentaje<=31.99:
             print ('Tu porcentaje de grasa corporal es: ',grasa_porcentaje ,'Tienes un nivel de grasa aceptable')
         elif grasa_porcentaje>=32:
             print ('Tu porcentaje de grasa corporal es: ',grasa_porcentaje ,'Tienes un nivel de grasa alto')
@@ -88,14 +88,14 @@ def grasa_porcentaje(cintura,cuello,altura,cadera):
             
             
     if sexo2=="hombre":
-        grasa_porcentaje=495/(1.0324-0.19077*(math.log10(cintura-cuello))+0.15456*(math.log10(altura*100)))-450
-        if grasa_porcentaje<=5:
+        grasa_porcentaje=float(495/(1.0324-0.19077*(math.log10(cintura-cuello))+0.15456*(math.log10(altura*100)))-450)
+        if grasa_porcentaje<=5.99:
             print ('Tu porcentaje de grasa corporal es: ',grasa_porcentaje ,'Tienes la grasa esencial para vivir.')
-        elif grasa_porcentaje>=6 and grasa_porcentaje<=13:
+        elif grasa_porcentaje>=6 and grasa_porcentaje<=13.99:
             print ('Tu porcentaje de grasa corporal es: ',grasa_porcentaje ,'Tienes un nivel de grasa propio de un atleta.')
-        elif grasa_porcentaje>=14 and grasa_porcentaje<=17:
+        elif grasa_porcentaje>=14 and grasa_porcentaje<=17.99:
             print ('Tu porcentaje de grasa corporal es: ',grasa_porcentaje ,'Tienes un nivel de grasa bajo,cuerpo fitness')
-        elif grasa_porcentaje>=18 and grasa_porcentaje<=25:
+        elif grasa_porcentaje>=18 and grasa_porcentaje<=25.99:
             print ('Tu porcentaje de grasa corporal es: ',grasa_porcentaje ,'Tienes un nivel de grasa aceptable')
         elif grasa_porcentaje>=26:
             print ('Tu porcentaje de grasa corporal es: ',grasa_porcentaje ,'Tienes un nivel de grasa alto')
