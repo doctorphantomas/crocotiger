@@ -91,7 +91,7 @@ def grasa_porcentaje(cintura,cuello,altura,cadera):
         grasa_porcentaje=495/(1.0324-0.19077*(math.log10(cintura-cuello))+0.15456*(math.log10(altura*100)))-450
         if grasa_porcentaje<=5:
             print ('Tu porcentaje de grasa corporal es: ',grasa_porcentaje ,'Tienes la grasa esencial para vivir.')
-        elif grasa_porcentaje>=6 and grasa_porcentaje<=3:
+        elif grasa_porcentaje>=6 and grasa_porcentaje<=13:
             print ('Tu porcentaje de grasa corporal es: ',grasa_porcentaje ,'Tienes un nivel de grasa propio de un atleta.')
         elif grasa_porcentaje>=14 and grasa_porcentaje<=17:
             print ('Tu porcentaje de grasa corporal es: ',grasa_porcentaje ,'Tienes un nivel de grasa bajo,cuerpo fitness')
